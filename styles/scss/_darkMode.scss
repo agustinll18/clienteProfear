@@ -1,0 +1,75 @@
+/* .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    align-self: center;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $color2;
+        border-radius: 30px;
+        -webkit-transition: 0.4s;
+        transition: 0.4s; 
+    }
+    input:checked + .slider {
+        background:  url("https://static.vecteezy.com/system/resources/thumbnails/000/556/930/small/RR-v-jan-2019-135.jpg");
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+ */
+ #darkMode {
+    background: url("https://img.icons8.com/carbon-copy/40/null/crescent-moon.png") no-repeat center;
+    background-color: rgb(255, 255, 255);
+    background-size: 50px 50px;
+    border: 3px solid $color3;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+    .postMessageContainer {
+        &:hover {
+            background: rgb(232, 232, 232);
+        }
+  }
+}  
+  #darkMode:hover,
+  #darkMode:focus {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+  #darkMode.clicked {/* 
+    filter: none !important; *//* 
+    background: url("https://img.icons8.com/dotty/40/null/sun.png")  no-repeat center; */
+    border: 3px solid rgb(0, 225, 255);
+    background-image: radial-gradient( rgba(247, 255, 2, 0.788)39%,  rgb(217, 217, 217)40%);
+    filter:brightness(1);
+  }

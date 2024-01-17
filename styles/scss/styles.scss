@@ -1,0 +1,360 @@
+@import "./components/navbar";
+@import "./components/login";
+@import "./variables";
+@import "./footer/contacto";
+@import "./components/perfil";
+@import "./responsive";
+@import "./components/post";
+@import "./darkMode";
+body {
+    min-height: 100vh;
+    transition: all 0.5s ease-in-out;
+    a,
+    a:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+    .saludo {
+        text-align: center;
+        width: 66.6%;
+        min-height: 52vh;
+        margin: auto;
+        position: relative;
+        top: 6.7vh;
+        h2 {
+            margin-bottom: 4vh;
+            font-weight: bolder;
+            font-size: clamp(29px, 4vh, 48px);
+        }
+    }
+    h1 {
+        font-size: clamp(18px, 4vh, 48px);
+        b {
+            vertical-align: text-bottom;
+        }
+
+        img {
+            height: clamp(18px, 4vh, 48px);
+            width: clamp(18px, 4vh, 48px);
+            align-items: center;
+        }
+    }
+    h2,
+    b {
+        font-size: clamp(16px, 2.2vw, 42px) !important;
+    }
+    .containerTotal {
+        width: 99.2vw;
+        min-height: 93.3vh;
+        top: 6.7vh;
+        position: absolute;
+    }
+    .postButton {
+        border: 3px solid #00ff1e !important;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 2vw;
+        z-index: 2;
+        height: 51px;
+        width: 51px;
+        position: fixed;
+        bottom: 6.7vh;
+        cursor: auto;
+        right: 0.5vw;
+
+        a {
+            border-radius: 50%;
+            img {
+                cursor: pointer;
+                transform: translate(-9.5px, -9.5px);
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.col-1 {
+    width: 8.33%;
+    margin: auto;
+}
+.col-2 {
+    width: 16.66%;
+    margin: auto;
+}
+.col-3 {
+    width: 25%;
+    margin: auto;
+}
+.col-4 {
+    width: 33.33%;
+    margin: auto;
+}
+.col-5 {
+    width: 41.66%;
+    margin: auto;
+}
+.col-6 {
+    width: 50%;
+    margin: auto;
+}
+.col-7 {
+    width: 58.33%;
+    margin: auto;
+}
+.col-8 {
+    width: 66.66%;
+    margin: auto;
+}
+.col-9 {
+    width: 75%;
+    margin: auto;
+}
+.col-10 {
+    width: 83.33%;
+    margin: auto;
+}
+.col-11 {
+    width: 91.66%;
+    margin: auto;
+}
+.col-12 {
+    width: 100%;
+    margin: auto;
+}
+.col {
+    padding: 0px;
+}
+.goal {
+    align-items: baseline;
+}
+
+.dark {
+    color: rgb(237, 236, 236) !important;
+    background-color: #232323 !important;
+}
+.containerCards {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.saludoCampeones {
+    color: white;
+    text-align: center;
+    background: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(10vh, 20vh, 200px) !important;
+    h2 {
+        height: 50%;
+        margin: auto auto 0 auto;/* 
+        display: flex; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+.space-holder {
+    position: relative;
+    width: 100%;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: black;
+    overflow-x: hidden;
+}
+
+.horizontal {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+}
+
+.cards {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 10vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.brand-card {
+    position: relative;
+    width: clamp(300px, 20vw, 1000px);
+    height: clamp(300px, 77vh, 1000px);
+    margin-right: 10vw;
+    flex-shrink: 0;
+}
+
+.appear {
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    height: clamp(300px, 50vh, 1000px);
+    .cardBrand {
+        width: inherit;
+        height: inherit;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 36px;
+        perspective: 2500px;
+        margin: 0 auto;
+
+        &:hover {
+            .wrapper {
+                transform: perspective(clamp( 600px , 1200px,100vh)) translateY(-5%) rotateX(55deg) translateZ(0);
+                box-shadow: 0px 0px 50px cyan;
+                -webkit-box-shadow: 0px 0px 50px cyan;
+                -moz-box-shadow: 0px 0px 50px cyan;
+                opacity: 0.25;
+                &::before {
+                    opacity: 1;
+                }
+                &::after {
+                    height: 120px;
+                }
+            }
+            .afa {
+                opacity: 1;
+                transform: translate3d(0%, -50%, 50px);
+                filter: drop-shadow(1px 1px 25px rgb(0, 234, 255));
+                .character {
+                    opacity: 1;
+                    transform: translate3d(0%, -5%, 50px);
+                    width: 100%;
+                    height: clamp(200px, 50vh, 600px);
+                    filter: drop-shadow(1px 1px 25px rgb(255, 255, 255));
+                    -webkit-filter: drop-shadow(1px 1px 25px rgb(255, 255, 255));
+                }
+            }
+        }
+    }
+    .cover-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        mix-blend-mode: color-burn;
+        z-index: 2;
+        background: transparent;
+        box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    }
+    .wrapper {
+        transition: all 0.5s;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        height: inherit;
+        &::before {
+            content: "";
+            opacity: 0;
+            width: 100%;
+            height: 80px;
+            transition: all 0.5s;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-image: radial-gradient(cyan 20%, rgb(255, 255, 255) 60%, cyan 80%);
+            box-shadow: 0px 0px 3px cyan /* , 0px -40px 80px rgb(255, 255, 255)  inset,0px 0px 13px cyan  inset */; /* ,white 40%, cyan 100%) */
+        }
+        &::after {
+            content: "";
+            opacity: 0;
+            width: 100%;
+            height: 80px;
+            transition: all 0.5s;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            opacity: 1;
+            background-image: linear-gradient(
+                to bottom,
+                transparent 46%,
+                rgba(12, 13, 19, 0.25) 68%,
+                rgb(155 116 0) 97%
+            );
+            opacity: 1;
+        }
+    }
+    .title {
+        width: 100%;
+        transition: transform 0.5s;
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 25px;
+    }
+    .afa {
+        width: 100%;
+        opacity: 0;
+        transition: all 0.5s;
+        position: absolute;
+        z-index: -1;
+        background: url("../../multimedia/afa.png");
+        background-size: contain;
+        background-position-x: center;
+        background-position-y: center;
+        height: clamp(200px, 35vh, 600px);
+        object-fit: contain;
+        aspect-ratio: 1/1 !important;
+        background-repeat: no-repeat;
+        .character {
+            opacity: 0;
+            transition: all 0.5s;
+            position: absolute;
+            z-index: -1;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: clamp(200px, 35vh, 600px);
+            object-fit: contain;
+            aspect-ratio: 1/1 !important;
+        }
+    }
+}
+
+.appear.inview2 {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.appear.inview2:nth-child(1) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.appear.inview2:nth-child(2) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.appear.inview2:nth-child(3) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.appear.inview2:nth-child(4) {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.appear.inview2:nth-child(5) {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+.stars {
+    color: rgb(207, 156, 5);
+    background: transparent;
+    font-size: clamp(20px,5vw,30px);
+}

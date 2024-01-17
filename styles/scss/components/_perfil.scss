@@ -1,0 +1,151 @@
+@import "../variables";
+.perfilPosts {
+    border: 1px solid $color3;
+    .perfilContainer {
+        height: clamp(40vh, 50vh, 900px); /* 
+    border: 1px solid $color5 !important; */
+        .portada {
+            height: 80%;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .dataUser {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            height: 20%;
+            align-items: center;
+            justify-content: space-between;
+            .bienvenidaForo {
+                display: flex;
+                align-items: center;
+            }
+            .foto {
+                height: clamp(60px, 5vw, 600px);
+                width: clamp(60px, 5vw, 600px);
+                background: $color1;
+                border: 3px solid $color4 !important;
+                border-radius: 50%;
+                text-align: center;
+                margin-right: 2vw;
+                z-index: 2;
+                img {
+                    height: 99%; /*
+                    width: 99%; */
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+            h3 {
+                align-self: center;
+                margin: 0;
+                font-weight: 900;
+            }
+        }
+    }
+    .postMessageContainer {
+        border-top: 1px solid $color3;
+        padding: 25px 3vw; /* 
+        min-height: 30vh; */
+        overflow: hidden;
+        box-shadow: inset 0 1px 25px $color4;
+        box-sizing: border-box;
+        transition: all 0.5s;
+        &:hover {
+            background: rgb(47, 47, 47);
+        }
+        .dataUser {
+            display: flex;
+            width: 100%; /* 
+                margin: auto; */
+            height: 20%;
+            align-items: center;
+            justify-content: space-between;
+            .foto {
+                height: clamp(75px, 5vw, 600px);
+                width: clamp(75px, 5vw, 600px);
+                background: $color1;
+                border: 3px solid $color4 !important;
+                border-radius: 50%;
+                text-align: center;
+                margin-right: 2vw;
+                z-index: 2;
+                img {
+                    height: 99%;
+                    object-fit: contain;
+                    border-radius: 50%;
+                    height: 70%;
+                    position: relative;
+                    top: 15%;
+                    width: 99%;
+                }
+            }
+            h3 {
+                font-weight: 700;
+            }
+        }
+
+        .pText {
+            align-self: center;
+            margin-top: 20px;
+            padding-left: 6vw;
+            height: 80%;
+            font-weight: 600;
+            justify-self: end;
+            overflow: hidden;
+            overflow-wrap: break-word;
+        }
+    }
+}
+.perfilPostsUser .postMessageContainer {
+    border-top: 2px solid $color3;
+    padding: 25px 3vw;
+    min-height: 30vh;
+    overflow: hidden;
+    overflow: hidden;
+    box-shadow: inset 0 1px 25px $color4;
+    box-sizing: border-box;
+    .dataUser {
+        display: flex;
+        width: 80%;
+        height: 20%;
+        align-items: center;
+        .foto {
+            height: clamp(75px, 5vw, 600px);
+            width: clamp(75px, 5vw, 600px);
+            background: $color1;
+            border: 3px solid $color4 !important;
+            border-radius: 50%;
+            text-align: center;
+            margin-right: 2vw;
+            z-index: 2;
+            img {
+                height: 99%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+        h3 {
+            font-weight: 700;
+        }
+    }
+
+    p {
+        align-self: center;
+        margin-top: 20px;
+        padding-left: 6vw;
+        height: 80%;
+        font-weight: 600;
+        justify-self: end;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+}
+.date {
+    margin: auto;
+}
+.separador {
+    height: clamp(45px, 6vh, 69px);
+}
