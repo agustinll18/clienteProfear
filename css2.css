@@ -1,0 +1,189 @@
+.firma {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    display: flex;
+}
+.linea1 {
+    width: 5px;
+    height: 80px;
+    
+    background: linear-gradient(179deg, #000000b2, #000000);
+    background-size: 400% 400%;
+
+    -webkit-animation: linea1 1s ease-in-out;
+    -moz-animation: linea1 1s ease-in-out;
+    -o-animation: linea1 1s ease-in-out;
+    animation: linea1 .5s cubic-bezier(1, 0.04, 1, 1.01) forwards; 
+    rotate: 25deg;
+}
+@keyframes linea1 {
+    from {/* 
+        background-position: 0% 0%;
+        background: transparent; */
+        transform: scaleY(0) translateY(100%) rotate(180deg);
+        opacity: 0 ;
+    }
+    to {/* 
+        background-position: 1% 100%;
+        background: linear-gradient(179deg, #00000049, #000000); */
+        
+        transform: scaleY(1)translateY(0%)rotate(180deg);
+        opacity: 1 ;
+    }
+}
+.linea2 {
+    width: 5px;
+    height: 100px;
+    position: relative;
+    left:12px;
+   background: transparent;
+    background-size: 1000% 1000%;
+    -webkit-animation: linea2 1s ease-in-out;
+    -moz-animation: linea2 1s ease-in-out;
+    -o-animation: linea2 1s ease-in-out;
+    animation: linea2 .5s ease-in-out forwards;;
+    animation-delay: .5s;
+    opacity: 0;
+} 
+@keyframes linea2 {
+    0% {
+        transform: scaleY(0) translateY(0%);
+        opacity: 0 ;
+    }
+    1%{
+        
+        transform: scaleY(0.01)translateY(0%) ;
+        background:black ;
+        opacity: 1 ;
+    }
+    100% {
+        
+        transform: scaleY(1)translateY(0%);
+        opacity: 1 ;
+        background: #000000 ;
+    }
+}
+.linea3 {
+    width: 5px;
+    height: 60px;
+    position: relative;
+    top:40px;left: -2px;/* 
+    transform: rotate(-15deg); */
+   background:transparent;
+    background-size: 1000% 1000%;
+    -webkit-animation: linea3 1s ease-in-out;
+    -moz-animation: linea3 1s ease-in-out;
+    -o-animation: linea3 1s ease-in-out;
+    animation: linea3 .5s ease-in-out forwards;;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes linea3 {
+    0% {
+        transform: scaleY(0) translateY(0%)rotate(-15deg);
+        opacity: 0 ;
+    }
+    1%{
+        
+        transform: scaleY(0.01)translateY(0%)rotate(-15deg) ;
+        opacity: 1 ;
+        background:black;
+    }
+    100% {
+        
+        transform: scaleY(1)translateY(0%)rotate(-15deg);
+        opacity: 1 ;
+        background:black;
+    }
+}
+.linea4 {
+    width: 5px;
+    height: 40px;
+    position: relative;
+    top:20px;left: 5px;
+    transform: rotate(90deg);
+   background: transparent;
+    background-size: 1000% 1000%;
+    -webkit-animation: linea4 1s ease-in-out;
+    -moz-animation: linea4 1s ease-in-out;
+    -o-animation: linea4 1s ease-in-out;
+    animation: linea4 .5s ease-in-out forwards;;
+    animation-delay: 1.5s;
+}
+
+@keyframes linea4 {
+    0% {
+        transform: scaleY(0) translateY(0%)rotate(90deg);
+        opacity: 0 ;
+    }
+    1%{
+        
+        transform: scaleY(0.01)translateY(0%)rotate(90deg) ;
+        opacity: 1 ;
+        background:black;
+    }
+    100% {
+        
+        transform: scaleY(1)translateY(0%)rotate(90deg);
+        opacity: 1 ;
+        background:black;
+    }
+}
+.linea5 {
+    width: 5px;
+    height: 60px;
+    position: relative;
+    top:40px;left: 15px;
+   background: transparent;
+    background-size: 1000% 1000%;
+    -webkit-animation: linea5 1s ease-in-out;
+    -moz-animation: linea5 1s ease-in-out;
+    -o-animation: linea5 1s ease-in-out;
+    animation: linea5 .5s ease-in-out forwards;;
+    animation-delay: 2s;
+}
+@keyframes linea5 {
+    0% {
+        transform: scaleY(0) translateY(0%);
+        opacity: 0 ;
+    }
+    1%{
+        
+        transform: scaleY(0.01)translateY(0%) ;
+        background:black ;
+        opacity: 1 ;
+    }
+    100% {
+        
+        transform: scaleY(1)translateY(0%);
+        opacity: 1 ;
+        background: #000000 ;
+    }
+}
+.linea6 {
+    width: 5px;
+    height: 45px;
+    position: relative;
+    top:75px;left: 30px;
+    transform: rotate(90deg);
+    background: transparent;
+    background-size: 1000% 1000%;
+    -webkit-animation: linea4 1s ease-in-out;
+    -moz-animation: linea4 1s ease-in-out;
+    -o-animation: linea4 1s ease-in-out;
+    animation: linea4 .5s ease-in-out forwards;;
+    animation-delay: 2.5s
+}/* 
+
+@-webkit-keyframes linea {
+  from{background-position:0% 0%;opacity:0}
+  to{background-position:1% 100%;opacity:1}
+}
+@-moz-keyframes linea {
+  from{background-position:0% 0%;opacity:0}
+  to{background-position:1% 100%;opacity:1}
+}
+@-o-keyframes linea {
+  from{background-position:0% 0%;opacity:0}
+  to{background-position:1% 100%;opacity:1} */
